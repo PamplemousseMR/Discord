@@ -22,11 +22,13 @@ void initNcurses()
     nonl();
     noecho();               /* désactive les affichages */
     mousemask(BUTTON1_CLICKED, NULL);   /* Active le clic gauche de la souris*/
+    #ifndef __APPLE__
     if(has_mouse() != TRUE)
     {
         fprintf(stderr, "[initNcurses] Aucune souris n'est détectée.\n");
         exit(EXIT_FAILURE);
     }
+    #endif
 }
 
 void endNcurses()

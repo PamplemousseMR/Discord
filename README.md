@@ -2,6 +2,10 @@
 
 The goal of this project is to implement a chat system.
 
+## Travis
+
+[![Build Status](https://travis-ci.com/PamplemousseMR/Discord.svg?branch=master)](https://travis-ci.com/PamplemousseMR/Discord)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -23,7 +27,7 @@ Compile using the makefile : `make`.
 
 ### use
 
-Start the coordinator to create the IPC tools : `./coordinator` .
+Start the coordinator to create the IPC tools : `./coordinator_exe` .
 ```
 -h [options] : Displays help for execution arguments. 
 -c [options] <key> : To specify the key of the message queue.
@@ -32,7 +36,7 @@ Start the coordinator to create the IPC tools : `./coordinator` .
 -d [options] : Cleans the IPC if there is a problem during a previous creation that would not have deleted the IPC tools itself.
 ```
 
-Start the customers : `./customer`.
+Start the customers : `./customer_exe`.
 
 ```
 -h [options] : Displays help for execution arguments. 

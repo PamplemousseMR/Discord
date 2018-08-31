@@ -1,5 +1,5 @@
 CC = gcc
-CCFLAGS_STD = -Wall -Werror -O3 -ansi -pedantic -o
+CCFLAGS_STD = -Wall -Werror -O3 -pedantic -o
 CCFLAGS = $(CC) $(CCFLAGS_STD)
 CCLIB = -lcurses
 
@@ -11,7 +11,7 @@ all :
 
 CUSTOMEROUTDIR = CustomerOFiles/
 CUSTOMERDIR = Customer/
-CUSTOMEREXEC = customer
+CUSTOMEREXEC = customer_exe
 
 CUSTOMEROBJETS = $(CUSTOMEROUTDIR)main.o $(CUSTOMEROUTDIR)ncurses.o $(CUSTOMEROUTDIR)option.o $(CUSTOMEROUTDIR)getch.o $(CUSTOMEROUTDIR)signal.o
 
@@ -40,7 +40,7 @@ $(CUSTOMEROUTDIR)option.o : $(CUSTOMERDIR)option.c $(CUSTOMERDIR)option.h
 
 COORDINATOROUTDIR = CoordinatorOFiles/
 COORDINATORDIR = Coordinator/
-COORDINATOREXEC = coordinator
+COORDINATOREXEC = coordinator_exe
 
 COORDINATOROBJETS = $(COORDINATOROUTDIR)main.o $(COORDINATOROUTDIR)option.o $(COORDINATOROUTDIR)signal.o
 
