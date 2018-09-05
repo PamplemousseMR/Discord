@@ -1,6 +1,7 @@
 CC = gcc
-CCFLAGS_STD = -Wall -Werror -O3 -pedantic -o
-CCFLAGS = $(CC) $(CCFLAGS_STD)
+CCFLAGS_STD = -Wall -Werror -O3 -pedantic
+CCFLAGS = $(CC) $(CCFLAGS_STD) -ansi -o
+CCFLAGS_MAIN = $(CC) $(CCFLAGS_STD) -o
 CCLIB = -lcurses
 
 COMMUNDIR = Commun/
@@ -21,7 +22,7 @@ customer_directory :
 	mkdir -p $(CUSTOMEROUTDIR)
 
 customer_compile : $(CUSTOMEROBJETS)
-	$(CCFLAGS) $(CUSTOMEREXEC) $(CUSTOMEROBJETS) $(CCLIB)
+	$(CCFLAGS_MAIN) $(CUSTOMEREXEC) $(CUSTOMEROBJETS) $(CCLIB)
 
 $(CUSTOMEROUTDIR)main.o : $(CUSTOMERDIR)main.c $(CUSTOMERDIR)option.h $(CUSTOMERDIR)ncurses.h $(CUSTOMERDIR)signal.h $(CUSTOMERDIR)getch.h
 	$(CCFLAGS) $(CUSTOMEROUTDIR)main.o -c $(CUSTOMERDIR)main.c
@@ -50,7 +51,7 @@ coordinator_directory :
 	mkdir -p $(COORDINATOROUTDIR)
 
 coordinator_compile : $(COORDINATOROBJETS)
-	$(CCFLAGS) $(COORDINATOREXEC) $(COORDINATOROBJETS)
+	$(CCFLAGS_MAIN) $(COORDINATOREXEC) $(COORDINATOROBJETS)
 
 $(COORDINATOROUTDIR)main.o : $(COORDINATORDIR)main.c $(COORDINATORDIR)option.h $(COORDINATORDIR)signal.h
 	$(CCFLAGS) $(COORDINATOROUTDIR)main.o -c $(COORDINATORDIR)main.c
