@@ -8,11 +8,7 @@ matrix:
     #          osx gcc 
     #
     #==============================
-
-    - os: osx
-      osx_image: xcode6.4
-      compiler: gcc
-
+    
     - os: osx
       osx_image: xcode7.3
       compiler: gcc
