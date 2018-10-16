@@ -28,6 +28,10 @@ static void enableConnexion()
     customer_t cus;
     int shmid;
 
+    memset(&ask, 0, sizeof(ask_t));
+    memset(&rep, 0, sizeof(rep_t));
+    memset(&cus, 0, sizeof(customer_t));
+
     /* envoi d'une demande */
     ask.type = TYPE_ASK;
     ask.co = CONNECTION;
@@ -235,6 +239,9 @@ static void clearProg()
     int i;
     message_t message_struct;
     ask_t ask;
+
+    memset(&message_struct, 0, sizeof(message_t));
+    memset(&ask, 0, sizeof(ask_t));
 
     /* envoi d'une demande d'arrêt au coordinateur */
     ask.type = TYPE_ASK;
