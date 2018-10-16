@@ -14,7 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 - [ncurses](https://en.wikipedia.org/wiki/Ncurses) : A library providing an API that allows to write Text-based user interface in a terminal.
 
-### compilation
+### Compilation
 
 Compile using the makefile : `make`.
 
@@ -25,7 +25,7 @@ Compile using the makefile : `make`.
 - clean : Clean previous compilation.
 ```
 
-### use
+### Use
 
 Start the coordinator to create the IPC tools : `./coordinator_exe` .
 ```

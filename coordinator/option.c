@@ -15,10 +15,10 @@ static void printOptions()
                    "\td : permet de specifier de nettoyer les IPC en cas de probleme lors d'une precedente creation\n");
 }
 
-void getOption(int argc,char* argv[])
+void getOption(int _argc,char* _argv[])
 {
 	int c;
-	while((c = getopt(argc, argv, "hc:s:m:d")) != -1)
+    while((c = getopt(_argc, _argv, "hc:s:m:d")) != -1)
 	{
 		switch(c)
 		{

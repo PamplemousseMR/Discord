@@ -1,8 +1,8 @@
 #include "signal.h"
 
-static void manager(int signum)
+static void manager(int _signum)
 {
-    if(signum == SIGINT)
+    if(_signum == SIGINT)
     {
         printf("[manager] signal SIGINT recu\n");
         exit(EXIT_SUCCESS);

@@ -15,6 +15,6 @@ extern key_t MEM_KEY;   /* la cle du segment de memoire partagee */
 extern int CLEAR;
 
 /* enregistre les options des les variables 'extern' */
-void getOption(int argc,char* argv[]);
+void getOption(int, char*[]);
 
 #endif

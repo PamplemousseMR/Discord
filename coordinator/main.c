@@ -263,10 +263,10 @@ void waitForCustomer()
 
 /* =============== Main =============== */
 
-int main(int argc,char* argv[])
+int main(int _argc,char* _argv[])
 {
     /* récuperation des options */
-    getOption(argc, argv);
+    getOption(_argc, _argv);
     if(CLEAR)
     {
         deleteIPC();
