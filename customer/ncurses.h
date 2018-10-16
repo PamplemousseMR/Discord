@@ -6,7 +6,7 @@
 #include <stdlib.h>     /* NULL */
 #include <ncurses.h>    /* ncurses */
 
-#include "../Commun/commun.h"
+#include "../commun/commun.h"
 
 #define MESSAGE_LINE (LINES-3)
 #define MESSAGE_COL ((COLS/3)*2)

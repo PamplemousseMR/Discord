@@ -7,7 +7,7 @@
 #include <stdio.h>	/* fprintf */
 #include <unistd.h>	/* getopt */
 
-#include "../Commun/commun.h"
+#include "../commun/commun.h"
 
 extern key_t MSG_KEY;   /* la cle de la file de messages */
 extern key_t SEM_KEY;   /* la cle du tableau de semaphores */

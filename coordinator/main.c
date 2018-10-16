@@ -10,7 +10,7 @@
 #include <string.h>	/* strcpy */
 #include <sys/sem.h>    /* Pour semget, semctl, semop */
 
-#include "../Commun/commun.h"
+#include "../commun/commun.h"
 #include "option.h"
 #include "signal.h"
 

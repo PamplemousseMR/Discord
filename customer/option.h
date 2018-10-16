@@ -8,7 +8,7 @@
 #include <getopt.h>	/* getopt */
 #include <string.h>     /* strcpy */
 
-#include "../Commun/commun.h"
+#include "../commun/commun.h"
 
 extern key_t MSG_KEY;               /* la clé de la file de messages */
 extern char ID[MAX_ID_SIZE];        /* l'id du client */

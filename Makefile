@@ -4,14 +4,14 @@ CCFLAGS = $(CC) $(CCFLAGS_STD) -ansi -o
 CCFLAGS_MAIN = $(CC) $(CCFLAGS_STD) -o
 CCLIB = -lcurses
 
-COMMUNDIR = Commun/
+COMMUNDIR = commun/
 
 all :
 	make customer
 	make coordinator
 
-CUSTOMEROUTDIR = CustomerOFiles/
-CUSTOMERDIR = Customer/
+CUSTOMEROUTDIR = customerOFiles/
+CUSTOMERDIR = customer/
 CUSTOMEREXEC = customer_exe
 
 CUSTOMEROBJETS = $(CUSTOMEROUTDIR)main.o $(CUSTOMEROUTDIR)ncurses.o $(CUSTOMEROUTDIR)option.o $(CUSTOMEROUTDIR)getch.o $(CUSTOMEROUTDIR)signal.o
@@ -39,8 +39,8 @@ $(CUSTOMEROUTDIR)ncurses.o : $(CUSTOMERDIR)ncurses.c $(CUSTOMERDIR)ncurses.h
 $(CUSTOMEROUTDIR)option.o : $(CUSTOMERDIR)option.c $(CUSTOMERDIR)option.h
 	$(CCFLAGS) $(CUSTOMEROUTDIR)option.o -c $(CUSTOMERDIR)option.c
 
-COORDINATOROUTDIR = CoordinatorOFiles/
-COORDINATORDIR = Coordinator/
+COORDINATOROUTDIR = coordinatorOFiles/
+COORDINATORDIR = coordinator/
 COORDINATOREXEC = coordinator_exe
 
 COORDINATOROBJETS = $(COORDINATOROUTDIR)main.o $(COORDINATOROUTDIR)option.o $(COORDINATOROUTDIR)signal.o
