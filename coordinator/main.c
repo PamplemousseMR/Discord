@@ -179,7 +179,7 @@ void waitForCustomer()
     int ok;
     int customer_count = 1;
 
-
+    memset(&rep, 0, sizeof(rep_t));
     while(1)
     {
         /* attente d'une demande */
@@ -199,6 +199,8 @@ void waitForCustomer()
                 rep.ok = 1;
                 rep.mem = MEM_KEY;
                 rep.sem = SEM_KEY;
+                printf("%d\n", msg);
+                printf("%d\n", rep.ok);
                 if(msgsnd(msg, &rep, sizeof(rep_t) - sizeof(long), 0) == -1)
                 {
                     perror("[waitForCustomer] Erreur lors de l'envoi de la reponse");
