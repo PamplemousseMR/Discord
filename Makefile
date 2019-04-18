@@ -1,4 +1,3 @@
-CC = gcc
 CCFLAGS_STD = -Wall -Werror -O3 -pedantic
 CCFLAGS = $(CC) $(CCFLAGS_STD) -ansi -o
 CCFLAGS_MAIN = $(CC) $(CCFLAGS_STD) -o
