@@ -2,13 +2,9 @@
 
 The goal of this project is to implement a chat system.
 
-## Travis
+## CI
 
-[![Build Status](https://travis-ci.com/PamplemousseMR/Discord.svg?branch=master)](https://travis-ci.com/PamplemousseMR/Discord)
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+![Build Status](https://github.com/PamplemousseMR/Discord/actions/workflows/build.yml/badge.svg)
 
 ### Prerequisites
 
